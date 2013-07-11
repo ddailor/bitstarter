@@ -1,10 +1,21 @@
 #!/usr/bin/env node
 
 var fs = require('fs');
+var sys = require('util');
+var rest = require('./restler');
 var program = require('commander');
 var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
+var URL_DEFAULT = "http://mysterious-coast-2071.herokuapp.com";
+rest.get('http://google.com').on('complete', function(result) {
+    if (result instanceof Error ) {
+	sys.puts('Error: '+ result.message);
+	this.retry(5000);
+} else {
+    sys.puts(result);
+}
+});
 var assertFileExists = function(infile) {
     var instr = infile.toString();
     if ( !fs.existsSync(instr)) {
@@ -37,8 +48,10 @@ if (require.main == module) {
     program
 	.option('-c, --checks ', 'Path to checks.json', assertFileExists, CHECKSFILE_DEFAULT)
     .option('-f, --file ', 'Path to index.html', assertFileExists, HTMLFILE_DEFAULT)
+    .option('-u, --url ', 'Path to htmlfile' , assertFileExists, URL_DEFAULT)
     .parse(process.argv);
     var checkJson = checkHtmlFile(program.file, program.checks);
+//    var checkJson = checkHtmlFile(program.url, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
 } else {
