@@ -8,7 +8,7 @@ alert (buffer.toString);
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(buffer.toString);
+  response.send("Hello World 3");
 });
 
 var port = process.env.PORT || 5000;
