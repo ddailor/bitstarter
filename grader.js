@@ -17,7 +17,7 @@ rest.get(urlfile).on('complete', function(result) {
 } else {
     return result;
 }
-});
+})};
 
 var assertFileExists = function(infile) {
     var instr = infile.toString();
