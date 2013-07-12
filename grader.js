@@ -8,14 +8,17 @@ var cheerio = require('cheerio');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 var URL_DEFAULT = "http://mysterious-coast-2071.herokuapp.com";
-rest.get('http://google.com').on('complete', function(result) {
+
+var restHtmlFile = function(urlfile) {
+rest.get(urlfile).on('complete', function(result) {
     if (result instanceof Error ) {
 	sys.puts('Error: '+ result.message);
 	this.retry(5000);
 } else {
-    sys.puts(result);
+    return result;
 }
 });
+
 var assertFileExists = function(infile) {
     var instr = infile.toString();
     if ( !fs.existsSync(instr)) {
@@ -34,7 +37,8 @@ var loadChecks = function(checksfile) {
 };
 
 var checkHtmlFile = function(htmlfile, checksfile) {
-    $ = cheerioHtmlFile(htmlfile);
+//    $ = cheerioHtmlFile(htmlfile);
+    $ = restHtmlFile(htmlfile);
     var checks = loadChecks(checksfile).sort();
     var out = {};
     for (var ii in checks) {
@@ -50,8 +54,8 @@ if (require.main == module) {
     .option('-f, --file ', 'Path to index.html', assertFileExists, HTMLFILE_DEFAULT)
     .option('-u, --url ', 'Path to htmlfile' , assertFileExists, URL_DEFAULT)
     .parse(process.argv);
-    var checkJson = checkHtmlFile(program.file, program.checks);
-//    var checkJson = checkHtmlFile(program.url, program.checks);
+//    var checkJson = checkHtmlFile(program.file, program.checks);
+    var checkJson = checkHtmlFile(program.url, program.checks);
     var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
 } else {
