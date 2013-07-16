@@ -46,7 +46,7 @@
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .heading, .subheading {
+      .heading, .subheading .receiver .gateway .mobileapp {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
@@ -59,34 +59,21 @@
         font-size: 18px;
         line-height: 24px;
       }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
+      p.hero-sub {
+        padding-top: 1%;
       }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
+      h2 {
         text-align: center;
       }
-      .statistics h3, .statistics p {
-        color: white;
-      }
 
+      
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
         padding-bottom: 2.5%;
         text-align: justify;
       }
-      .asset {
-        padding: 2.5% 0%;
-      }
+      
       .footer {
         color: #808080;
         text-align: center;
@@ -135,85 +122,42 @@
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Product Family</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
+      <div class="hero-unit">
+<!--      <div class="row-fluid heading"> -->
+<!--        <div class="span12">   -->
+          <h1>The Vamp-Off Product Lines</h1>
+	  <p class="hero-sub"><strong>Here are the products we offer to give you the capability to remotely shut off standby power.</strong></p>
+	  <p><strong>Click the "Learn more" to see how these products work together.</strong></p> 
+          <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+      </div>
+       
+      <div class="row-fluid product">
+        <div class="span4 receiver">
+	  <h2>Receiver</h2>
+	  <img class="img-polaroid" src="http://placehold.it/350x200">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Hardware and Software</p>
+          <!-- <p class="lead">Hardware and Software</p>  -->
+	  <p>The receiver is the unit that you plug the appliance that you want to control into. This will
+	    receive the signal from the internet gateway to turn on or off the power to the appliance.</p>
         </div>
-      </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-              </div>  
-          </div>
-        </div>
-      </div>
-
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
+      <div class="span4 gateway">
+	<h2>Gateway</h2>
+	<img class="img-polaroid" src="http://placehold.it/350x200">
+	<p>The gateway unit plugs into your home network router using a std CAT-5 cable.</p>
+	<p>The gateway will communicate with the server in the cloud to send and receive signals from your
+	  mobile phone</p>
+	</div>
+      <div class="span4 mobileapp">
+	<h2>Mobile App</h2>
+          <img class="img-polaroid" src="http://placehold.it/350x200">
+	  <p>From the app you can set-up automatic schedules to turn standby power off or on.  
+	    The app also allows you to manually toggle the standby power when you are away from home.</p> 
+	  <p>The mobile app for Android "Vamp-Off" can be found in the Google Play Store.</p>
+	  <p>The mobile app for iOS "Vamp-Off" can be found in the Apple Store.</p>      
       </div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300">
-        </div>
-      </div>
-
-      
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
@@ -225,5 +169,6 @@
         </div>
       </div>
     </div>
+</div>
   </body>
 </html>
