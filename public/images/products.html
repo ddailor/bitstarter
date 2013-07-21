@@ -50,6 +50,15 @@
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
+      .video-container {
+      position: relative;
+      padding-bottom: 56%;
+      padding-top: 60px; overflow: hidden;
+      }
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+
       p.lead {
         padding-top: 1.5%;
         font-size: 24px;
@@ -134,20 +143,24 @@
       <div class="row-fluid product">
         <div class="span6 receiver">
 	  <h2>Controller</h2>
-	  <img class="img-polaroid" src="http://placehold.it/500x300">
+	  <div class="video-container">
+	  <iframe width="560" height="315" src="//www.youtube.com/embed/_AYyKAOdnSM?rel=0" frameborder="0"></iframe>
+	    </div>
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <!-- <p class="lead">Hardware and Software</p>  -->
 	  <p>The controller is a wi-fi enabled transceiver that will use your home wi-fi router to communicate with the scheduler in the internet cloud and your mobile phone app to shut off the standby power to any appliance you have plugged into it.</p>
-	  <p><a class="btn" href="#">More details &raquo;</a></p>
+	  <p><a class="btn btn-primary" href="#">More details &raquo;</a></p>
         </div>
       <div class="span6 mobileapp">
 	<h2>Mobile App</h2>
-          <img class="img-polaroid" src="http://placehold.it/500x300">
+	<div class="video-container">
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/Bl1rmaKFep4?rel=0" frameborder="0"></iframe>
+	    </div>
 	  <p>From the mobile phone app you can set-up automatic schedules to turn standby power off or on.  
 	    The mobile phone app also allows you to manually toggle the standby power when you are away from home.</p> 
 	  <p>The mobile app "Vamp-Off" is free in the Google Play Store or the Apple Store.</p>      
-	  <p><a class="btn" href="#">More details &raquo;</a></p>
+	  <p><a class="btn btn-primary" href="#">More details &raquo;</a></p>
       </div>
 
       <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->

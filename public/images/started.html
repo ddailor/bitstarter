@@ -62,6 +62,14 @@
       p.hero-sub {
         padding-top: 1%;
       }
+      .video-container {
+      position: relative;
+      padding-bottom: 56%;
+      padding-top: 60px overflow: hidden;
+      }
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
       h2 {
         text-align: center;
       }
@@ -135,26 +143,33 @@
       <div class="row-fluid product">
         <div class="span4 receiver">
 	  <h2>Synch to WiFi</h2>
-	  <img class="img-polaroid" src="http://placehold.it/350x200">
+	  <div class="video-container">
+	  <iframe width="360" height="315" src="//www.youtube.com/embed/ltUttE4dHjU" frameborder="0"></iframe>
+		  </div>
+
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <!-- <p class="lead">Hardware and Software</p>  -->
 	  <p>Enter your wi-fi router SSID and password and a nickname for the Vamp-Off unit. Then start the synch procedure.</p>
-	  <p><a class="btn" href="#">Synch to Wi-Fi &raquo;</a></p>
+	  <p><a class="btn btn-primary" href="#">Synch to Wi-Fi &raquo;</a></p>
         </div>
       <div class="span4 manual">
 	<h2>Use App Manually</h2>
-	<img class="img-polaroid" src="http://placehold.it/350x200">
+	<div class="video-container">
+	  <iframe width="360" height="203" src="//www.youtube.com/embed/ltUttE4dHjU" frameborder="0"></iframe>
+	  </div>
 	<p>Use the mobile phone app to manually turn the appliance standby power on or off.</p>
-	<p><a class="btn" href="#">Mobile App Manual &raquo; </a></p>
+	<p><a class="btn btn-primary" href="#">Mobile App Manual &raquo; </a></p>
 	</div>
       <div class="span4 autoapp">
 	<h2>Calendar Set-up</h2>
-          <img class="img-polaroid" src="http://placehold.it/350x200">
-	  <p>Use the mobile phone app to set a calendar that will automatically turn appliance standby power off or on.  
+	<div>
+	  <iframe width="360" height="203" src="//www.youtube.com/embed/ltUttE4dHjU" frameborder="0"></iframe>
+	  </div>
+          <p>Use the mobile phone app to set a calendar that will automatically turn appliance standby power off or on.  
 	    </p> 
 	        
-	  <p><a class="btn" href="#">Automatic Calendar &raquo;</a></p>
+	  <p><a class="btn btn-primary" href="#">Automatic Calendar &raquo;</a></p>
       </div>
 
       <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->
