@@ -7,6 +7,7 @@ var msg4 = new Buffer(fs.readFileSync("products.html"),"utf-8");
 var msg5 = new Buffer(fs.readFileSync("started.html"),"utf-8");
 var msg6 = new Buffer(fs.readFileSync("contact.html"),"utf-8");
 var msg7 = new Buffer(fs.readFileSync("shop.html"),"utf-8");
+var msg8 = new Buffer(fs.readFileSync("control.html"),"utf-8");
  
 var buffer = new Buffer("Hello World 4 buffer","utf-8");
 var message = buffer.toString("utf-8");
@@ -29,6 +30,9 @@ app.get('/started', function(request,response) {
 });
 app.get('/contact', function(request,response) {
     response.send(msg6.toString("utf-8"));
+});
+app.get('/control', function(request,response) {
+    response.send(msg8.toString("utf-8"));
 });
 app.get('/shop', function(request,response) {
     response.send(msg7.toString("utf-8"));
