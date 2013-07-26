@@ -71,7 +71,6 @@
         text-align: center;
       }
 
-      
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -136,13 +135,14 @@
 <!--        <div class="span12">   -->
           <h1>Control the imp</h1>
 	  <p class="hero-sub"><strong>using Wi-Fi from the web</strong></p>
+	  <div class="form-actions" action="https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f" method="post">
+	    <input type="hidden" name="value" value="Turn On">
+	    <input class="btn btn-success btn-large" type="submit" id="on" value="On">
+	    </div>
 	  <form action="https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f" method="post">
-	    <input type="hidden" name="value">
-	    string:<input type="text" name="example1">
-	    number:<input type="text" name="example2">
-	    <input type="button" value="Submit" onClick="sendForm(this.form);">
-	    </form>
-           
+	    <input type="hidden" name="value" value="Turn Off">
+	    <input class="btn btn-danger btn-large" type="submit" id="off" value="Off">
+            </form>
       </div>  <!--  end hero-unit -->
        
       </div> <!-- end container -->
