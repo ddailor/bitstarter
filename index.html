@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Startup Engineering Project</title>
+    <title>cloudhomation - Vamp-Off</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
@@ -54,9 +55,8 @@
           font-size: 300%;
       }
       
-      a:visited { background-color: yellow color: red }
-      a:unvisited { background-color: purple color: yellow }
-      a:link { color: orange }
+/*      a:visited { background-color: #4099FF }  */    
+      
            p.lead {
         padding-top: 1.5%;
         font-size: 24px;
@@ -111,10 +111,8 @@
     </style>
   </head>
   <body>
-    <script>
-    localStorage.clear();
-    sessionStorage.clear();
-    </script>
+
+
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -134,11 +132,17 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
-	      <li><a href="/products"><i class="icon-info-sign icon-white"></i>Products</a></li>
-	      <li><a href="/started"><i class="icon-facetime-video icon-white"></i>Getting Started</a></li>
-              <li><a href="/about"><i class="icon-user icon-white"></i>About</a></li>
+	      <li><a href="/products">Products</a></li>
+	      <li><a href="/started">Getting Started</a></li>
+              <li><a href="/about">About</a></li>
+	      <li class="dropdown" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a href="/control">Control</a></li>
+		  <li><a href="/setup">Set Up</a></li>
+		  <li><a href="/schedule">Schedule</a></li>
+		  </ul>
+		</li>
               <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
-	      <li><a href="/control"><i class="icon-info-sign"></i>Control</a></li>
 	      <li><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
 	      <!-- hold search bar out until I need it for site un
 	      <li><form class="navbar-search pull-right">
@@ -149,7 +153,12 @@
         </div>
       </div>
     </div>
-
+<!-- <script> type="text/javascript" src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>
+<script type="javascript">
+  $(document).ready( function() {
+      $('.dropdown-toggle').dropdown();
+      });
+</script>  -->
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
