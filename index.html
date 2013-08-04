@@ -196,8 +196,9 @@
 	     
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+	  <div class="row-fluid"> <!-- start row-fluid for span8 offset2 -->
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -218,6 +219,8 @@
               </div>
             </div>
           </div>
+	  </div>   <!-- end row-fluid for span8 offset2 -->
+	  <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -226,11 +229,14 @@
               <div class="bar bar-warning" style="width: 70%;"></div>
             </div>
           </div>
+	  <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-info btn-large preorder"><i class="icon-shopping-cart icon-white"></i> Preorder with Bitcoin</button>
           </div>
+	  </div> <!-- end row-fluid of span6 offest3  -->
+	  <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- AddThis Button BEGIN -->
 		<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
@@ -240,11 +246,13 @@
 		<a class="addthis_counter addthis_bubble_style"></a>
 		</div>
 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-		<script                 type="text/javascript"src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fa7ec21a9d6bce"></script>
+		<script type="text/javascript"src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fa7ec21a9d6bce"></script>
 	<!-- AddThis Button END -->
-          </div>
+          </div>  <!-- end span8 offset2 -->
+	  </div>  <!--  end row-fluid for span8 offset2 -->
         </div>
-      </div>
+      </div>   <!-- end span10 offset1 -->
+      </div>  <!-- end row-fluid for span10 offset1 -->  
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
