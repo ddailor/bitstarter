@@ -48,6 +48,7 @@ app.get('/schedule', function(request, response) {
 });
 app.get('/savings', function(request,response) {
     response.send(msgB.toString("utf-8"));
+});
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
