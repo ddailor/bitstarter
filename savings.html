@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Set up Procedure for Vamp-Off</title>
+    <title>Savings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="bootstrap-dropdown.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
@@ -19,12 +20,6 @@
         body {
          padding-top: 60px;
         }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
       }
 
       /* Landscape phones and down */
@@ -32,12 +27,7 @@
        .copy {
          padding: 2.5% 10%;
        }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
+       
       }
 
       /* All form factors */
@@ -45,38 +35,63 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background-color: white;
+        margin: 0 auto;
+        width: auto;
+   
+    padding: 80px 20px;
       }
-      .heading, .subheading .receiver .gateway .mobileapp {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
+     /* type selectors */
+article, aside, figure, footer, header, nav, section {
+    
+}
+
+section {
+    padding: 2em 2em 2em 2em;
+}
+label {
+	float: left;
+    width: 16em;
+    text-align: right;
+    
+}
+input {
+    width: 14em;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+#buttons input {
+	width: 7em;
+	margin-right: 0;
+}
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+
+span {
+	color: red;
+	font-size: 87.5%;
+	margin-left: .5em;
+}
+      
       p {
         font-size: 18px;
         line-height: 24px;
       }
-      p.hero-sub {
-        padding-top: 1%;
-      }
+      h1 {
+	color: blue;
+	}
+     
       h2 {
         text-align: center;
-      }
-
-      
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
       }
       
       .footer {
         color: #808080;
-        text-align: center;
+        text-align: left;
+	margin-left: 5%;
       }
       .footer p {
         font-size: 11px;
@@ -109,7 +124,7 @@
               <li><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
 	      <li><a href="/products">Products</a></li>
 	      <li><a href="/started">Getting Started</a></li>             
-	      <li class="dropdown active" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
+	      <li class="active dropdown" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
 		<ul class="dropdown-menu">
 		  <li><a href="/control">Control</a></li>
 		  <li><a href="/setup">Set Up</a></li>
@@ -126,43 +141,45 @@
       </div>
     </div>  <!-- end nav-bar -->
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
-    <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="hero-unit">
-<!--      <div class="row-fluid heading"> -->
-<!--        <div class="span12">   -->
-          <h1>Set up the "Vamp-Off"</h1>
-	  
-	  <p class="hero-sub"><strong>Download the Vamp-Off mobile app from the appropriate store.<br>
-	  Enter the SSID of your home router and the password for your home router on the setup page of the app.<br>
-	  Enter a nickname for the unit/appliance you are plugging in or room name<br>
-	  Hold the mobile phone display against the clear slit in the "Vamp-Off" case and press the "Blink-Up" button<br>
-	  Make sure you see the unit blinking green from the clear slit after the procedure - the unit can now communicate with the internet</strong></p>
-	  
+<div class="container">
+   <div class="row-fluid">
 
-          <p><a href="#teampic" class="btn btn-primary btn-large" fole="button" data-toggle="modal">Set Up &raquo;</a></p>
-           
-      </div>  <!--  end hero-unit -->
-       
-      <div id="teampic" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-	<div class="modal-header">
-	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-	  <h2 id="myModalLabel3">Our Engineering Department</h2>
-	  </div>
-	<div class="modal-body">
-	  <img class="img-polaroid" src="http://i.imgur.com/UMIKeq7.jpg">
-	  </div>
-	<div class="modal-footer">
-	  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-	  </div>
-	</div>
-      <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
+    <h1>Savings Calculator</h1>
+	<form action="" 
+    	name="calc_form" id="calc_form" onsubmit="return output( CalculateCost())" action+"" method="get">
+		<fieldset>
+        	
+        	<label for="cost"><strong>Cost of electricity ($/kWhr):</strong></label>
+        	<input type="number" name="cost" id="cost" min="0.01" max="1.00" step="0.01" value="" 
+        	       placeholder=" $.01 < Input < $1.0" autofocus><br>
+        	<label for="loss"><strong>Standby power (W):</strong></label>
+        	<input type="number" name="loss" id="loss" min="0.1" max="100" step="0.1" value=""
+                   placeholder=" Input > 0 " ><br>
+        	<label for="hours"><strong>Vamp-Off time off (hrs/day):</strong></label>
+        	<input type="number" name="hours" id="hours" min="0.1" max="24" step="0.1" value="" placeholder=" 0.1 < Input <24 "><br><br>
+        	<label for="sum"><strong>Annual Savings from Vamp-Off</strong></label>
+        	<input type="text" name="sum" id="sum" ><br><br>
+        	<input class="btn btn-primary" type="submit" value="Calculate Cost"/>
+        	<input class="btn btn-danger" type="reset" id="reset" value="Reset"><br>
+		</fieldset>
+		
+<script type="text/javascript">
+		function CalculateCost() { 
+			return "$" + parseFloat(document.calc_form.cost.value) * parseFloat(document.calc_form.loss.value) * parseFloat(document.calc_form.hours.value) * 0.365;
+		};
+
+		function output(val) {
+			document.getElementById( "sum" ).value = val;
+			return false; // force form not to submit.
+		};	
+	</script> 
+	
+	
+	</form>
+      
+
+      <!--  footer  -->
+     
       <div class="row-fluid footer">
         <div class="span12">
           <p>This work is licensed under
@@ -171,6 +188,7 @@
             </a>.  @2013 cloudhomation inc.</p>
         </div>
       </div> <!-- end footer -->
+     </div>
 
     </div> <!-- end container -->
 
