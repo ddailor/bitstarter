@@ -138,24 +138,40 @@
 <!--        <div class="span12">   -->
           <h1>Set up the "Vamp-Off"</h1>
 	  
-	  <p class="hero-sub"><strong>Download the Vamp-Off mobile app from the appropriate store.<br>
-	  Enter the SSID of your home router and the password for your home router on the setup page of the app.<br>
-	  Enter a nickname for the unit/appliance you are plugging in or room name<br>
-	  Hold the mobile phone display against the clear slit in the "Vamp-Off" case and press the "Blink-Up" button<br>
-	  Make sure you see the unit blinking green from the clear slit after the procedure - the unit can now communicate with the internet</strong></p>
+	  <p class="hero-sub"><strong>Download the Vamp-Off mobile app.<br>
+	  Enter the SSID of your home router, the password for your home router and a name for your appliance that you are controlling on the setup page of the app.<br>
+	  Hold the mobile phone display against the clear slit in the "Vamp-Off" case and press the "Sync to Wi-Fi" button.<br>
+	  If there is blinking green light from the clear slit after the procedure - the unit can now communicate with the internet.</strong></p>
+	  If the unit is blinking red or orange, repeat the "Sync to Wi-Fi" procedure until you do see a blinking gren light.<br>
 	  
 
           <p><a href="#teampic" class="btn btn-primary btn-large" fole="button" data-toggle="modal">Set Up &raquo;</a></p>
            
       </div>  <!--  end hero-unit -->
        
-      <div id="teampic" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div id="setup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
 	<div class="modal-header">
 	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-	  <h2 id="myModalLabel3">Our Engineering Department</h2>
+	  <h2 id="myModalLabel3">Vamp-Off Setup screen</h2>
 	  </div>
 	<div class="modal-body">
-	  <img class="img-polaroid" src="http://i.imgur.com/UMIKeq7.jpg">
+	  <form action=""
+		name="setup_form" id="setup_form" onsubmit="return BlinkUp()" action="" method="get">
+	    <fieldset>
+	      <label for="ssid"><strong>Router SSID:</strong></label>
+	      <input type="text" name="ssid" id="ssid" value="" placeholder="ssid" autofocus><br><br>
+	      <label for="pword"><strong>Router Password:</strong></label>
+	      <input type="text" name="pword" id="pword" value="" placeholder="router password"><br><br>
+	      <label for="appname"><strong>Aplliance Name:</strong></label>
+	      <input type="text" name="appname" id="appname" value="" placeholder="appliance name"><br><br><br>
+	      <input class="btn btn-primary" type="submit" value="Sync to Wi-Fi"/>
+	      </fieldset>
+	    <script type="text/javascript">
+	      function BlinkUp() {
+	             return false;
+	      };
+	      </script>
+	    </form>
 	  </div>
 	<div class="modal-footer">
 	  <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
