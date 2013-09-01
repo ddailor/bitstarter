@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Set up Procedure for Vamp-Off</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> 
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
+
+      /* All form factors */
+
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading .receiver .gateway .mobileapp {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      p.hero-sub {
+        padding-top: 1%;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .modal-header {
+        background-color: gray;
+        color: blue;
+        }
+      .modal-footer {
+        background-color: gray;
+        }
+      .modal-body {
+        color: blue;
+        }
+      
+      .footer {
+        color: #808080;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #808080;
+      }
+    </style>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42942888-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+  </head>
+  <body>
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/">Vamp-Off</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
+	      <li><a href="/products">Products</a></li>
+	      <li><a href="/started">Getting Started</a></li>             
+	      <li><a href="/control">Control</a></li>
+		  <li><a href="/setup">Set Up</a></li>
+		  <li><a href="/schedule">Schedule</a></li>
+		  <li><a href="/savings">Savings</a></li>
+	      <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+	      <li><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>  <!-- end nav-bar -->
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="hero-unit">
+<!--      <div class="row-fluid heading"> -->
+<!--        <div class="span12">   -->
+          <h1>Set up the "Vamp-Off"</h1><br>
+	  
+	  <p class="hero-sub"><strong>1. Download the Vamp-Off mobile app.<br><br>
+	  2. Enter the SSID of your home router, the password for your home router and a name for your appliance that you are controlling on the setup page of the app.<br><br>
+	  3. Hold the mobile phone display against the clear slit in the "Vamp-Off" case and press the "Sync to Wi-Fi" button.<br><br>
+	  4. If there is blinking green light after the procedure - the unit can now communicate with the internet.<br><br>
+	  5. If the unit is blinking red or orange, repeat the "Sync to Wi-Fi" procedure until you do see a blinking green light.</strong></p><br><br>
+	  
+
+          <p><a href="#setup" class="btn btn-primary btn-large" fole="button" data-toggle="modal">Set Up &raquo;</a></p>
+           
+      </div>  <!--  end hero-unit -->
+       
+      <div id="setup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+	<div class="modal-header">
+	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+	  <h2 id="myModalLabel3">Vamp-Off Setup screen</h2>
+	  </div>
+	<div class="modal-body">
+	  <form action=""
+		name="setup_form" id="setup_form" onsubmit="return BlinkUp()" action="" method="get">
+	    <fieldset>
+	      <label for="ssid"><strong>Router SSID:</strong></label>
+	      <input type="text" name="ssid" id="ssid" value="" placeholder="ssid" autofocus><br><br>
+	      <label for="pword"><strong>Router Password:</strong></label>
+	      <input type="text" name="pword" id="pword" value="" placeholder="router password"><br><br>
+	      <label for="appname"><strong>Aplliance Name:</strong></label>
+	      <input type="text" name="appname" id="appname" value="" placeholder="appliance name"><br><br><br>
+	      <input class="btn btn-primary" type="submit" value="Sync to Wi-Fi"/>
+	      </fieldset>
+	    <script type="text/javascript">
+	      function BlinkUp() {
+	             return false;
+	      };
+	      </script>
+	    </form>
+	  </div>
+	<div class="modal-footer">
+	  <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+      <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>.  @2013 cloudhomation inc.</p>
+        </div>
+      </div> <!-- end footer -->
+
+    </div> <!-- end container -->
+
+  </body>
+</html>
