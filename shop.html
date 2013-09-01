@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
         
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <!-- <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> 
+    
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
@@ -80,10 +80,10 @@
         padding-bottom: 2.5%;
         text-align: justify;
       }
-      .coinbase-button {
-         list-style-type: none;
-         padding-bottom: 0.5em;
-         }
+      .size-btn {
+         min-width: 250px;
+         max-width: 250px;
+        }
       .footer {
         color: #808080;
         text-align: center;
@@ -123,6 +123,8 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
           </button>
           <a class="brand" href="/">Vamp-Off</a>
           <div class="nav-collapse collapse">
@@ -130,16 +132,11 @@
               <li><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
 	      <li><a href="/products">Products</a></li>
 	      <li><a href="/started">Getting Started</a></li>             
-	      <li class="dropdown" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li><a href="/control">Control</a></li>
+	      <li><a href="/control">Control</a></li>
 		  <li><a href="/setup">Set Up</a></li>
 		  <li><a href="/schedule">Schedule</a></li>
 		  <li><a href="/savings">Savings</a></li>
-		  </ul>
-		</li>
-	      <li><a href="/about">About</a></li>
-              <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+	      <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
 	      <li class="active"><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -158,19 +155,19 @@
 <!--      <div class="row-fluid heading"> -->
 <!--        <div class="span12">   -->
           <h1>Shop</h1>
-	  <p class="hero-sub"><strong>cloudhomation inc.</strong></p>
-	  <p class="hero-sub"><strong>Prepay for Vamp-Off product using BitCoin</strong></p>
+	  <p class="hero-sub"><strong>cloudhomation inc.</strong></p><br>
+	  <p class="hero-sub"><strong>Prepay for Vamp-Off product using BitCoin</strong></p><br>
 	
-          <a class="btn btn-large btn-primary " data-code="9c3747926b8e6983c33222d44416893a" data-button-style="custom_large" data-button-text="Buy (1) Vamp-Off - $60 USD" href="https://coinbase.com/checkouts/9c3747926b8e6983c33222d44416893a">Buy (1) Vamp-Off - $60 USD</a><br><br>
+          <a class="btn btn-large btn-primary size-btn " data-code="9c3747926b8e6983c33222d44416893a" data-button-style="custom_large" data-button-text="Buy (1) Vamp-Off - $60 USD" href="https://coinbase.com/checkouts/9c3747926b8e6983c33222d44416893a">Buy (1) Vamp-Off - $60 USD</a><br><br>
 	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script> 
 
-          <a class="btn btn-large btn-primary " data-code="20b23c5c49afa47614625e850146f3d5" data-button-style="custom_large" data-button-text="Buy (2) Vamp-Off - $110 USD" href="https://coinbase.com/checkouts/20b23c5c49afa47614625e850146f3d5">Buy (2) Vamp-Off- $110 USD</a><br><br>
+          <a class="btn btn-large btn-primary size-btn " data-code="20b23c5c49afa47614625e850146f3d5" data-button-style="custom_large" data-button-text="Buy (2) Vamp-Off - $110 USD" href="https://coinbase.com/checkouts/20b23c5c49afa47614625e850146f3d5">Buy (2) Vamp-Off- $110 USD</a><br><br>
 	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script>
 
- 	  <a class="btn btn-large btn-primary " data-code="9440461ecf60eb6553895fd485cb9797" data-button-style="custom_large" data-button-text="Practice transaction $1" href="https://coinbase.com/checkouts/9440461ecf60eb6553895fd485cb9797">Practice transaction $1</a><br><br>
+ 	  <a class="btn btn-large btn-primary size-btn " data-code="9440461ecf60eb6553895fd485cb9797" data-button-style="custom_large" data-button-text="Practice transaction $1" href="https://coinbase.com/checkouts/9440461ecf60eb6553895fd485cb9797">Practice transaction $1</a><br><br>
 	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script>
 
-	  <a class="btn btn-large btn-primary " data-code="f241335a184e7d3fdf162425bc3c9211" data-button-style="custom-large" data-button-text="Practice transaction $.05" href="https://coinbase.com/checkouts/f241335a184e7d3fdf162425bc3c9211">Practice transaction $.05</a>
+	  <a class="btn btn-large btn-primary size-btn " data-code="f241335a184e7d3fdf162425bc3c9211" data-button-style="custom-large" data-button-text="Practice transaction $.05" href="https://coinbase.com/checkouts/f241335a184e7d3fdf162425bc3c9211">Practice transaction $.05</a>
 	  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
       </div>  <!--  end hero-unit -->
        

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <!-- <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> 
+
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
@@ -124,23 +124,20 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
-          </button>
+            <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	  </button>
           <a class="brand" href="/">Vamp-Off</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
 	      <li><a href="/products">Products</a></li>
 	      <li><a href="/started">Getting Started</a></li>             
-	      <li class="dropdown active" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li><a href="/control">Control</a></li>
+	      <li><a href="/control">Control</a></li>
 		  <li><a href="/setup">Set Up</a></li>
 		  <li><a href="/schedule">Schedule</a></li>
 		  <li><a href="/savings">Savings</a></li>
-		  </ul>
-		</li>
-	      <li><a href="/about">About</a></li>
-              <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+	      <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
 	      <li><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -167,12 +164,12 @@
 	  5. If the unit is blinking red or orange, repeat the "Sync to Wi-Fi" procedure until you do see a blinking green light.</strong></p><br><br>
 	  
 
-          <p><a href="#setup" class="btn btn-primary btn-large" fole="button" data-toggle="modal">Set Up &raquo;</a></p>
+          <p><a href="#setup" class="btn btn-primary btn-large" role="button" data-toggle="modal">Set Up &raquo;</a></p>
            
       </div>  <!--  end hero-unit -->
        
       <div id="setup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-	<div class="modal-header">
+	<div class="modal-header" style="border-top-left-radius: 4px; border-top-right-radius: 4px;">
 	  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 	  <h2 id="myModalLabel3">Vamp-Off Setup screen</h2>
 	  </div>
@@ -184,7 +181,7 @@
 	      <input type="text" name="ssid" id="ssid" value="" placeholder="ssid" autofocus><br><br>
 	      <label for="pword"><strong>Router Password:</strong></label>
 	      <input type="text" name="pword" id="pword" value="" placeholder="router password"><br><br>
-	      <label for="appname"><strong>Aplliance Name:</strong></label>
+	      <label for="appname"><strong>Appliance Name:</strong></label>
 	      <input type="text" name="appname" id="appname" value="" placeholder="appliance name"><br><br><br>
 	      <input class="btn btn-primary" type="submit" value="Sync to Wi-Fi"/>
 	      </fieldset>
@@ -196,7 +193,7 @@
 	    </form>
 	  </div>
 	<div class="modal-footer">
-	  <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Close</button>
+	  <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
 	  </div>
 	</div>
       <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->

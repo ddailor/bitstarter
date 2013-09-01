@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Vamp-Off Contactt Us </title>
+    <title>Vamp-Off Contact Us </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <!-- <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script> 
+    
     
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
@@ -86,7 +86,10 @@
         padding-bottom: 2.5%;
         text-align: justify;
       }
-      
+      .size-btn {
+        min-width: 180px;
+        max-width: 180px;
+        }
       .footer {
         color: #808080;
         text-align: center;
@@ -127,6 +130,8 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
           </button>
           <a class="brand" href="/">Vamp-Off</a>
           <div class="nav-collapse collapse">
@@ -134,16 +139,11 @@
               <li><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
 	      <li><a href="/products">Products</a></li>
 	      <li><a href="/started">Getting Started</a></li>             
-	      <li class="dropdown" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
-		<ul class="dropdown-menu">
-		  <li><a href="/control">Control</a></li>
+	      <li><a href="/control">Control</a></li>
 		  <li><a href="/setup">Set Up</a></li>
 		  <li><a href="/schedule">Schedule</a></li>
 		  <li><a href="/savings">Savings</a></li>
-		  </ul>
-		</li>
-	      <li><a href="/about">About</a></li>
-              <li class="active"><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+	      <li class="active"><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
 	      <li><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -157,10 +157,10 @@
 	  <p class="hero-sub"><strong>We are a small group of environmentally conscious engineers in the Silicon Valley using technology to make it easy to reduce our impact on the environment.</strong></p>
 	  <p class="hero-sub"><strong>If you like our products and tell us, we'll feel good, but it's not very helpful.  If there is something you don't like about our product, that's great and we want to know about it.  Likewise, if you think the product could be made better, let us know.</strong></p>
 	    <p class="hero-sub"><strong>Each complainant will be a sent a "Vamp-Off" T-shirt that says: "Vamp-Off, you turn me off!"</strong></p>
-	    <p><a href="#contact" class="btn btn-warning btn-large" role="button" data-toggle="modal">Improvements &raquo &nbsp &nbsp;</a></p><br>
+	    <p><a href="#contact" class="btn btn-warning btn-large size-btn " role="button" data-toggle="modal">Improvements &raquo &nbsp &nbsp;</a></p><br>
 
 	  <p class="hero-sub"><strong>If you are having any technical difficulty with the product please contact our Technical Services department.</strong></p>
-          <p><a href="#technical" class="btn btn-danger btn-large" role="button" data-toggle="modal">Technical Services &raquo;</a></p><br> 
+          <p><a href="#technical" class="btn btn-danger btn-large size-btn " role="button" data-toggle="modal">Technical Services &raquo;</a></p><br> 
       </div>  <!--  end hero-unit -->
 
       <div id="contact" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
