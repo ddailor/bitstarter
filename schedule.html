@@ -65,8 +65,8 @@
         padding-top: 1%;
       }
       h2 {
-        text-align: center;
-      }
+        text-align: left;
+       }
 
       
       /* Marketing Copy and Footer */
@@ -151,12 +151,461 @@
 	  
 	  <p class="hero-sub"><strong>Review your normal pattern of being home, away, asleep or awake and schedule the "Vamp-Off" to turn off during your asleep, away hours and to turn back on for home, awake hours.<br><br>
 	  You can program the "Vamp-Off" each day to meet your normal schedule.<br><br>
-	  The schedule can be over-ridden with manual controls</strong></p><br>
+	  The schedule can be over-ridden with manual controls</strong></p><br><br>
 
            
       </div>  <!--  end hero-unit -->
-       
-      
+      <div class="sample-title"><h2><strong>Sample Schedule</strong></h2></div><br>
+      <canvas id="myCanvas" width="800" height="650" style="border:1px solid #000000;">
+
+</canvas>
+
+<script>
+
+var c=document.getElementById("myCanvas");
+var cd=c.getContext("2d");
+
+
+<!-- Background fill -->
+cd.fillStyle="#EEEEEE";
+cd.fillRect(0,0,800,650);
+
+<!-- Text fill -->
+cd.font = "bold 14px sans-sarif";
+cd.fillStyle="black";
+cd.fillText("MON",135,25);
+cd.fillText("TUE",235,25);
+cd.fillText("WED",335,25);
+cd.fillText("THU",435,25);
+cd.fillText("FRI",535,25);
+cd.fillText("SAT",635,25);
+cd.fillText("SUN",735,25);
+
+cd.fillText("12am",30,68);
+cd.fillText("1am",30,93);
+cd.fillText("2am",30,118);
+cd.fillText("3am",30,143);
+cd.fillText("4am",30,168);
+cd.fillText("5am",30,193);
+cd.fillText("6am",30,218);
+cd.fillText("7am",30,243);
+cd.fillText("8am",30,268);
+cd.fillText("9am",30,293);
+cd.fillText("10am",30,318);
+cd.fillText("11am",30,343);
+cd.fillText("12pm",30,368);
+cd.fillText("1pm",30,393);
+cd.fillText("2pm",30,418);
+cd.fillText("3pm",30,443);
+cd.fillText("4pm",30,468);
+cd.fillText("5pm",30,493);
+cd.fillText("6pm",30,518);
+cd.fillText("7pm",30,543);
+cd.fillText("8pm",30,568);
+cd.fillText("9pm",30,593);
+cd.fillText("10pm",30,618);
+cd.fillText("11pm",30,643);
+
+<!-- Calendar bar rectangles Monday -->
+cd.fillStyle="gray";
+cd.fillRect(125,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(125,225,50,75);
+
+cd.fillStyle="gray";
+cd.fillRect(125,300,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(125,475,50,175);
+
+
+<!-- Calendar bar rectangles Tuesday -->
+cd.fillStyle="gray";
+cd.fillRect(225,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(225,225,50,75);
+
+cd.fillStyle="gray";
+cd.fillRect(225,300,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(225,475,50,175);
+
+
+<!-- Calendar bar rectangles Wednesday -->
+cd.fillStyle="gray";
+cd.fillRect(325,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(325,225,50,75);
+
+cd.fillStyle="gray";
+cd.fillRect(325,300,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(325,475,50,175);
+
+
+<!-- Calendar bar rectangles Thursday -->
+cd.fillStyle="gray";
+cd.fillRect(425,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(425,225,50,75);
+
+cd.fillStyle="gray";
+cd.fillRect(425,300,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(425,475,50,175);
+
+
+<!-- Calendar bar rectangles Friday -->
+cd.fillStyle="gray";
+cd.fillRect(525,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(525,225,50,75);
+
+cd.fillStyle="gray";
+cd.fillRect(525,300,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(525,475,50,175);
+
+
+<!-- Calendar bar rectangles Saturday -->
+cd.fillStyle="gray";
+cd.fillRect(625,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(625,225,50,425);
+
+
+<!-- Calendar bar rectangles Sundday -->
+cd.fillStyle="gray";
+cd.fillRect(725,50,50,175);
+
+cd.fillStyle="yellow";
+cd.fillRect(725,225,50,425);
+
+
+
+<!-- Draw Horizontal Grid Lines -->
+cd.strokeStyle="#2F4F4F";
+cd.moveTo(0,50);
+cd.lineTo(800,50);
+cd.stroke();
+
+cd.moveTo(0,75);
+cd.lineTo(800,75);
+cd.stroke();
+
+cd.moveTo(0,100);
+cd.lineTo(800,100);
+cd.stroke();
+
+cd.moveTo(0,125);
+cd.lineTo(800,125);
+cd.stroke();
+
+cd.moveTo(0,150);
+cd.lineTo(800,150);
+cd.stroke();
+
+cd.moveTo(0,175);
+cd.lineTo(800,175);
+cd.stroke();
+
+cd.moveTo(0,200);
+cd.lineTo(800,200);
+cd.stroke();
+
+cd.moveTo(0,225);
+cd.lineTo(800,225);
+cd.stroke();
+
+cd.moveTo(0,250);
+cd.lineTo(800,250);
+cd.stroke();
+
+cd.moveTo(0,275);
+cd.lineTo(800,275);
+cd.stroke();
+
+cd.moveTo(0,300);
+cd.lineTo(800,300);
+cd.stroke();
+
+cd.moveTo(0,325);
+cd.lineTo(800,325);
+cd.stroke();
+
+cd.moveTo(0,350);
+cd.lineTo(800,350);
+cd.stroke();
+
+cd.moveTo(0,375);
+cd.lineTo(800,375);
+cd.stroke();
+
+cd.moveTo(0,400);
+cd.lineTo(800,400);
+cd.stroke();
+
+cd.moveTo(0,425);
+cd.lineTo(800,425);
+cd.stroke();
+
+cd.moveTo(0,450);
+cd.lineTo(800,450);
+cd.stroke();
+
+cd.moveTo(0,475);
+cd.lineTo(800,475);
+cd.stroke();
+
+cd.moveTo(0,500);
+cd.lineTo(800,500);
+cd.stroke();
+
+cd.moveTo(0,525);
+cd.lineTo(800,525);
+cd.stroke();
+
+cd.moveTo(0,550);
+cd.lineTo(800,550);
+cd.stroke();
+
+cd.moveTo(0,575);
+cd.lineTo(800,575);
+cd.stroke();
+
+cd.moveTo(0,600);
+cd.lineTo(800,600);
+cd.stroke();
+
+cd.moveTo(0,625);
+cd.lineTo(800,625);
+cd.stroke();
+
+
+<!-- Draw Vertical Grid Lines
+
+cd.strokeStyle="#2F4F4F";
+cd.moveTo(100,0);
+cd.lineTo(100,650);
+cd.stroke();
+
+cd.moveTo(200,0);
+cd.lineTo(200,650);
+cd.stroke();
+
+cd.moveTo(300,0);
+cd.lineTo(300,650);
+cd.stroke();
+
+cd.moveTo(400,0);
+cd.lineTo(400,650);
+cd.stroke();
+
+cd.moveTo(500,0);
+cd.lineTo(500,650);
+cd.stroke();
+
+cd.moveTo(600,0);
+cd.lineTo(600,650);
+cd.stroke();
+
+cd.moveTo(700,0);
+cd.lineTo(700,650);
+cd.stroke();
+
+cd.moveTo(800,0);
+cd.lineTo(800,650);
+cd.stroke();
+
+<!-- Draw Circles for transitions -->
+cd.beginPath();
+cd.arc(150, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill();  
+
+cd.beginPath();
+cd.arc(250, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(350, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(450, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(550, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(650, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(750, 225, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(150, 300, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill();  
+
+cd.beginPath();
+cd.arc(250, 300, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(350, 300, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(450, 300, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(550, 300, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(150, 475, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill();  
+
+cd.beginPath();
+cd.arc(250, 475, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(350, 475, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(450, 475, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(550, 475, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(150, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill();  
+
+cd.beginPath();
+cd.arc(250, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(350, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(450, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(550, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(650, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+cd.beginPath();
+cd.arc(750, 650, 13, 0, Math.PI*2, true);
+cd.closePath();
+cd.fillStyle="white";
+cd.fill(); 
+
+<!-- Put text in white circles -->
+cd.font = "bold 12px sans-sarif";
+cd.fillStyle="black";
+cd.fillText("ON",138,230);
+cd.fillText("ON",238,230);
+cd.fillText("ON",338,230);
+cd.fillText("ON",438,230);
+cd.fillText("ON",538,230);
+cd.fillText("ON",638,230);
+cd.fillText("ON",738,230);
+
+cd.fillText("OFF",138,305);
+cd.fillText("OFF",238,305);
+cd.fillText("OFF",338,305);
+cd.fillText("OFF",438,305);
+cd.fillText("OFF",538,305);
+
+cd.fillText("OFF",138,480);
+cd.fillText("OFF",238,480);
+cd.fillText("OFF",338,480);
+cd.fillText("OFF",438,480);
+cd.fillText("OFF",538,480);
+
+cd.fillText("ON",138,655);
+cd.fillText("ON",238,655);
+cd.fillText("ON",338,655);
+cd.fillText("ON",438,655);
+cd.fillText("ON",538,655);
+cd.fillText("ON",638,655);
+cd.fillText("ON",738,655);
+</script>
+
+
+
       <!--  Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
@@ -171,4 +620,4 @@
     </div> <!-- end container -->
 
   </body>
-</html>
+</html>
