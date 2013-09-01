@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 <!--    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     -->
-
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>  
+	<script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>  -->
     <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
        <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
@@ -153,8 +153,6 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
           </button>
           <a class="brand" href="#">Vamp-Off</a>
           <div class="nav-collapse collapse">
@@ -162,11 +160,16 @@
               <li class="active"><a href="/"><i class="icon-home icon-white"></i>Home</a></li>
 	      <li><a href="/products">Products</a></li>
 	      <li><a href="/started">Getting Started</a></li>
-              <li><a href="/control">Control</a></li>
+              <li class="dropdown" id="tryit"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Try It!<b class="caret"></b></a>
+		<ul class="dropdown-menu">
+		  <li><a href="/control">Control</a></li>
 		  <li><a href="/setup">Set Up</a></li>
 		  <li><a href="/schedule">Schedule</a></li>
 		  <li><a href="/savings">Savings</a></li>
-	      <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
+		  </ul>
+		</li>
+	      <li><a href="/about">About</a><li>
+              <li><a href="/contact"><i class="icon-envelope icon-white"></i>Contact</a></li>
 	      <li><a href="/shop"><i class="icon-shopping-cart icon-white"></i>Buy</a></li>
 	      <!-- hold search bar out until I need it for site un
 	      <li><form class="navbar-search pull-right">
