@@ -22,11 +22,11 @@
          padding-top: 60px;
         }
        .linediv-l {
-         border-right: 1px white solid;
+         border-right: 1px black solid;
         }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
+/*       .linediv-r { */
+/*       border-left: 1px black solid; */
+/*       } */
       }
 
       /* Landscape phones and down */
@@ -35,11 +35,11 @@
          padding: 2.5% 10%;
        }
        .linediv-l {
-         border-bottom: 1px white solid;
+         border-bottom: 1px black solid;
        }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
+/*      .linediv-r {   */
+/*         border-top: 1px black solid; */
+/*       } */
       }
 
       /* All form factors */
@@ -64,6 +64,12 @@
       p.hero-sub {
         padding-top: 1%;
       }
+      p.desc {
+        font-style: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: red;
+      }
       h2 {
         text-align: center;
        
@@ -83,6 +89,10 @@
       .size-btn {
          min-width: 250px;
          max-width: 250px;
+        }
+      .size-don-btn {
+         min-width: 150px;
+         max-width: 150px;
         }
       .footer {
         color: #808080;
@@ -154,20 +164,41 @@
       <div class="hero-unit">
 <!--      <div class="row-fluid heading"> -->
 <!--        <div class="span12">   -->
-          <h1>Shop</h1>
+          <h1>Make Vamp-Off a reality!</h1>
 	  <p class="hero-sub"><strong>cloudhomation inc.</strong></p><br>
-	  <p class="hero-sub"><strong>Prepay for Vamp-Off product using BitCoin</strong></p><br>
-	
+	  
+	<div class="row-fluid">
+	  <div class="span4 linediv-l">
+	    <p id="prepay"><strong>Prepay for Vamp-Off using BitCoin</strong></p>
           <a class="btn btn-large btn-primary size-btn " data-code="9c3747926b8e6983c33222d44416893a" data-button-style="custom_large" data-button-text="Buy (1) Vamp-Off - $60 USD" href="https://coinbase.com/checkouts/9c3747926b8e6983c33222d44416893a">Buy (1) Vamp-Off - $60 USD</a><br><br>
 	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script> 
 
           <a class="btn btn-large btn-primary size-btn " data-code="20b23c5c49afa47614625e850146f3d5" data-button-style="custom_large" data-button-text="Buy (2) Vamp-Off - $110 USD" href="https://coinbase.com/checkouts/20b23c5c49afa47614625e850146f3d5">Buy (2) Vamp-Off- $110 USD</a><br><br>
+	  <p><strong><u>Support us with Social Media</u><br>Go to startupmooc.org and seach for "Vamp Off". Send tweet to support Vamp-Off and get the word out to others</strong></p><br>
+  
+	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script>
+	  <a class="btn btn-large btn-danger size-btn" href="http://blog.coinbase.com/post/55203204550/instant-bitcoin-purchases-at-coinbase">How to get BitCoin</a>
+	  </div>
+	
+	<div class="row-fluid">
+	  <div class="span7 offset1 linediv-r">
+	    <p  id="donate"><strong>Support Vamp-Off with a donation using BitCoin.</strong></p>
+ 	    <a class="btn btn-large btn-primary size-don-btn " data-code="9440461ecf60eb6553895fd485cb9797" data-button-style="custom_large" data-button-text="Donate $1" href="https://coinbase.com/checkouts/9440461ecf60eb6553895fd485cb9797">Donate $1</a><p class="desc"> Encourager: Receive a Thank You email.</p>
 	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script>
 
- 	  <a class="btn btn-large btn-primary size-btn " data-code="9440461ecf60eb6553895fd485cb9797" data-button-style="custom_large" data-button-text="Practice transaction $1" href="https://coinbase.com/checkouts/9440461ecf60eb6553895fd485cb9797">Practice transaction $1</a><br><br>
-	  <script src="https://coinbase.com/assets/buttons.js" type="text/javascript"></script>
+	  <a class="btn btn-large btn-primary size-don-btn" data-code="b9eba52e8e8aedb4cdb750d2b1d55dce" data-button-style="custom-large" data-button-text="Donate $10" href="https://coinbase.com/checkouts/b9eba52e8e8aedb4cdb750d2b1d55dce">Donate $10</a><p class="desc"> Supporter: Thank You email and your name on the website.</p>
+	  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script> 
 
-	  <a class="btn btn-large btn-primary size-btn " data-code="f241335a184e7d3fdf162425bc3c9211" data-button-style="custom-large" data-button-text="Practice transaction $.05" href="https://coinbase.com/checkouts/f241335a184e7d3fdf162425bc3c9211">Practice transaction $.05</a>
+	  <a class="btn btn-large btn-primary size-don-btn" data-code="213b6fd0fdd19b26ca745fd6de8e2c60" data-button-style="custom-large" data-button-text="Donate $100" href="https://coinbase.com/checkouts/213b6fd0fdd19b26ca745fd6de8e2c60">Donate $100</a><p class="desc"> Believer: Vamp-Off T-shirt and monthly progress newsletter.</p>
+	  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
+	  <a class="btn btn-large btn-warning size-don-btn" data-code="7f265d3609efe3f213df48177e40775" data-button-style="custom-large" data-button-text="Donate $1000" href="https://coinbase.com/checkouts/7f2f65d3609efe3f213df48177e40775"> Donate $1,000</a><p class="desc"> Mover and Shaker: Participate in monthly strategy meeting and a Vamp-Off T-shirt. ( Max = 10 )</p>
+
+	<a class="btn btn-large btn-success size-don-btn" data-code="b55adad779bbd5cad6caf424f7a8c242" data-button-style="custom-large" data-button-text="Donate $10,000" href="https://coinbase.com/checkouts/b55adad779bbd5cad6caf424f7a8c242">Donate $10,000</a><p class="desc"> Founder: Input on company policies, strategy and execution. ( Max = 3 )</p>   																		     																		  
+	  <a class="btn btn-large btn-primary size-don-btn " data-code="f241335a184e7d3fdf162425bc3c9211" data-button-style="custom-large" data-button-text="Practice transaction $.05" href="https://coinbase.com/checkouts/f241335a184e7d3fdf162425bc3c9211">Practice $.05</a>
+	  </div>
+	  </div>
+	</div>
 	  <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
       </div>  <!--  end hero-unit -->
        
