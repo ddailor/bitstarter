@@ -40,7 +40,7 @@
         margin: 0 auto;
         width: auto;
    
-    padding: 80px 20px;
+        padding: 80px 20px;
       }
      /* type selectors */
 article, aside, figure, footer, header, nav, section {
@@ -83,16 +83,21 @@ span {
       }
       h1 {
 	color: blue;
+        text-align: center;
 	}
      
       h2 {
         text-align: center;
       }
-      
+      .savings-form {
+        border: 2px solid blue;
+        padding-left: 15px;
+      }
       .footer {
         color: #808080;
         text-align: left;
 	margin-left: 5%;
+        padding-left: 90px;
       }
       .footer p {
         font-size: 11px;
@@ -153,7 +158,7 @@ span {
 
 <div class="container">
    <div class="row-fluid">
-
+     <div class="savings-form span5 offset1">
     <h1>Savings Calculator</h1>
 	<form action="" 
     	name="calc_form" id="calc_form" onsubmit="return output( CalculateCost())" action="" method="get">
@@ -186,6 +191,7 @@ span {
 	
 	
 	</form>
+	</div>
       
 
       <!--  footer  -->
