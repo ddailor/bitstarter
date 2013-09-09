@@ -152,12 +152,12 @@
            <script>  
 	     $(function() {
               $(".btn-success").click(function() {
-	        var datastring = 'value=' + 1;
+	        
                 $.ajax ({
                   type: "POST",
-                  url: "https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f",
-                  data: datastring
-                 });
+                  url: "https://agent.electricimp.com/IQARPGCdv0Bh",
+                  data: { value: "2" }
+	        });
                  return false;
                 });
 	         
@@ -167,11 +167,11 @@
 	   <script>
 	     $(function() {
 	      $(".btn-danger").click(function() {
-	        var data2 = 'value=' + 0;
+	       
 	       $.ajax ({
 	         type: "POST",
-	         url: "https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f",
-	         data: data2            
+	         url: "https://agent.electricimp.com/IQARPGCdv0Bh",
+	         data: { value: "3" }         
 	        });
 	        return false;
 	       });
@@ -187,14 +187,14 @@
 <!--	  <form  action="https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f" method="POST">
 -->
              <form action="">
-	     <input type="hidden" name="value" value="1">
+	     <input type="hidden" name="value" value="2">
 	    <input class="btn btn-success btn-large" type="submit" position="absolute" id="on" value="On">
 	    </form>
 
 <!--	  <form action="https://api.electricimp.com/v1/9b459779007cb6e3/30b2ed5e04a0b61f" method="POST">
 -->
              <form action="">
-	     <input type="hidden" name="value" value="0">
+	     <input type="hidden" name="value" value="3">
 	    <input class="btn btn-danger btn-large" type="submit" position="absolute" id="off" value="Off">
             </form>
 
@@ -204,3 +204,4 @@
 
   </body>
 </html>
+OB
