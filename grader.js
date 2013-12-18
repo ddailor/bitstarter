@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+usr/bin/env node
 
 var fs = require('fs');
 var sys = require('util');
@@ -21,7 +21,7 @@ var assertFileExists = function(infile) {
     var instr = infile.toString();
     if ( !fs.existsSync(instr)) {
 	console.log("%s does not exist. Exiting.", instr);
-	process.exit(1); 
+	process.exit(1);
 	}
     return instr;
 };
